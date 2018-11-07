@@ -1,0 +1,1 @@
+{"service_url": "https://%s.api.riotgames.com/lol/league/v3/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=%s", "offline_mode": false, "api_key": "RGAPI-25e6f4b7-5d49-4feb-9e9b-12560aaae2c7", "request_delta": 300, "last_update": 1541568213.188686, "last_date_update": "2018-11-06 21:23:33.188685"}
