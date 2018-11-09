@@ -4,7 +4,7 @@ Author: Phillip "Hifumi" Cuesta
 Last Mod: 11/6/2018 8:13 PM
 Purpose: Scanner for Project 2 using Riot API
 """
-from sensor import Sensor
+from League.sensor import Sensor
 import json
 import time
 import requests
