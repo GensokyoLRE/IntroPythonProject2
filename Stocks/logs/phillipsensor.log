@@ -1,0 +1,37 @@
+2018-11-08 20:57:52,517 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,chart&range=1m
+2018-11-08 20:57:52,851 - 60 - Data created for ./tickFile/sre.json.
+2018-11-08 20:57:53,060 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:57:54,255 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:57:56,451 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:00,651 - 60 - Data created for ./tickFile/qdel.json.
+2018-11-08 20:58:00,844 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
+2018-11-08 20:58:01,048 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:58:02,246 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:58:04,440 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:08,640 - 60 - Data created for ./tickFile/qcom.json.
+2018-11-08 20:58:08,832 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
+2018-11-08 20:58:09,035 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:58:10,232 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:58:12,427 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:16,630 - 60 - Data created for ./tickFile/nuva.json.
+2018-11-08 20:58:16,824 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
+2018-11-08 20:58:17,020 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:58:18,215 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:58:20,422 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:24,779 - 60 - Data created for ./tickFile/ktos.json.
+2018-11-08 20:58:24,976 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
+2018-11-08 20:58:25,171 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:58:26,365 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:58:28,562 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:32,793 - 60 - Data created for ./tickFile/ilmn.json.
+2018-11-08 20:58:32,993 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
+2018-11-08 20:58:33,199 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:58:34,408 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:58:36,607 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:40,813 - 60 - Data created for ./tickFile/dxcm.json.
+2018-11-08 20:58:41,010 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
+2018-11-08 20:58:42,210 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
+2018-11-08 20:58:44,412 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
+2018-11-08 20:58:48,610 - 60 - Data created for ./tickFile/cub.json.
+2018-11-08 20:58:48,610 - 101 - Wrapping up...
+2018-11-08 20:58:48,613 - 117 - Sensor file finished job in 56.10 seconds.
