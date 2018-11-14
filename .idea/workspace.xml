@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed575377-1a42-47a6-8411-69ba138c9040" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/PhillipSensor.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/PhillipSensor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/PhillipSensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/PhillipSensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/logs/phillipsensor.log" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/logs/phillipsensor.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/cub.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/dxcm.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/ilmn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/ktos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/nuva.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/qcom.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/qdel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/sre.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,30 +15,12 @@
     <SUITE FILE_PATH="coverage/2018FA_CSIS_250_3580_Project2$PhillipSensor__1_.coverage" NAME="PhillipSensor (1) Coverage Results" MODIFIED="1541632778128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/League" />
     <SUITE FILE_PATH="coverage/2018FA_CSIS_250_3580_Project2$PhillipSensor.coverage" NAME="PhillipSensor Coverage Results" MODIFIED="1541568318034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Stocks/tickFile/cub.json">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="550">
-                    <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="697742479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.23" value="2" />
@@ -57,7 +28,7 @@
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,14 +55,14 @@
           <entry key="json" value="374" />
           <entry key="md" value="365" />
           <entry key="py" value="7183" />
-          <entry key="txt" value="45" />
+          <entry key="txt" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="374" />
           <entry key="Markdown" value="365" />
-          <entry key="PLAIN_TEXT" value="71" />
+          <entry key="PLAIN_TEXT" value="100" />
           <entry key="Python" value="7470" />
         </counts>
       </usages-collector>
@@ -108,7 +79,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Stocks/PhillipSensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="632">
               <caret line="139" column="63" selection-start-line="139" selection-start-column="63" selection-end-line="139" selection-end-column="63" />
               <folding>
                 <element signature="e#322#331#0" expanded="true" />
@@ -128,9 +99,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stocks/logs/phillipsensor.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-1089" />
-          </provider>
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
         </entry>
       </file>
     </leaf>
@@ -217,6 +186,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,7 +215,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,18 +339,26 @@
       <option name="project" value="LOCAL" />
       <updated>1541739873104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I'm doing things? I think">
+      <created>1542170322111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542170322111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.108208954" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10927505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26898047" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26898047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -430,7 +407,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bigger steps!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bigger steps!" />
+    <MESSAGE value="I'm doing things? I think" />
+    <option name="LAST_COMMIT_MESSAGE" value="I'm doing things? I think" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/League/eun1.json">
@@ -522,9 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stocks/logs/phillipsensor.log">
       <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-1089" />
-      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Stocks/tickFile/cub.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -535,7 +511,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stocks/PhillipSensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="632">
           <caret line="139" column="63" selection-start-line="139" selection-start-column="63" selection-end-line="139" selection-end-column="63" />
           <folding>
             <element signature="e#322#331#0" expanded="true" />
