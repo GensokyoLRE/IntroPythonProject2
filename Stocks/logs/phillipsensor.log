@@ -1,37 +1,92 @@
-2018-11-08 20:57:52,517 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,chart&range=1m
-2018-11-08 20:57:52,851 - 60 - Data created for ./tickFile/sre.json.
-2018-11-08 20:57:53,060 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:57:54,255 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:57:56,451 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:00,651 - 60 - Data created for ./tickFile/qdel.json.
-2018-11-08 20:58:00,844 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
-2018-11-08 20:58:01,048 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:58:02,246 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:58:04,440 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:08,640 - 60 - Data created for ./tickFile/qcom.json.
-2018-11-08 20:58:08,832 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
-2018-11-08 20:58:09,035 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:58:10,232 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:58:12,427 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:16,630 - 60 - Data created for ./tickFile/nuva.json.
-2018-11-08 20:58:16,824 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
-2018-11-08 20:58:17,020 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:58:18,215 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:58:20,422 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:24,779 - 60 - Data created for ./tickFile/ktos.json.
-2018-11-08 20:58:24,976 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
-2018-11-08 20:58:25,171 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:58:26,365 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:58:28,562 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:32,793 - 60 - Data created for ./tickFile/ilmn.json.
-2018-11-08 20:58:32,993 - 67 - Still on the clock. Sleeping for 0 seconds cooldown.
-2018-11-08 20:58:33,199 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:58:34,408 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:58:36,607 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:40,813 - 60 - Data created for ./tickFile/dxcm.json.
-2018-11-08 20:58:41,010 - 67 - Still on the clock. Sleeping for 1 seconds cooldown.
-2018-11-08 20:58:42,210 - 67 - Still on the clock. Sleeping for 2 seconds cooldown.
-2018-11-08 20:58:44,412 - 67 - Still on the clock. Sleeping for 4 seconds cooldown.
-2018-11-08 20:58:48,610 - 60 - Data created for ./tickFile/cub.json.
-2018-11-08 20:58:48,610 - 101 - Wrapping up...
-2018-11-08 20:58:48,613 - 117 - Sensor file finished job in 56.10 seconds.
+2018-11-13 20:33:23,913 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
+2018-11-13 20:33:24,310 - 63 - Data exists. Checking update on ./tickFile/sre.json.
+2018-11-13 20:33:24,689 - 46 - sre.json has the same data.
+2018-11-13 20:33:25,055 - 63 - Data exists. Checking update on ./tickFile/qdel.json.
+2018-11-13 20:33:25,718 - 46 - qdel.json has the same data.
+2018-11-13 20:33:26,072 - 63 - Data exists. Checking update on ./tickFile/qcom.json.
+2018-11-13 20:33:26,437 - 46 - qcom.json has the same data.
+2018-11-13 20:33:26,794 - 63 - Data exists. Checking update on ./tickFile/nuva.json.
+2018-11-13 20:33:27,158 - 46 - nuva.json has the same data.
+2018-11-13 20:33:27,517 - 63 - Data exists. Checking update on ./tickFile/ktos.json.
+2018-11-13 20:33:27,879 - 46 - ktos.json has the same data.
+2018-11-13 20:33:28,242 - 63 - Data exists. Checking update on ./tickFile/ilmn.json.
+2018-11-13 20:33:28,659 - 46 - ilmn.json has the same data.
+2018-11-13 20:33:29,022 - 63 - Data exists. Checking update on ./tickFile/dxcm.json.
+2018-11-13 20:33:29,379 - 46 - dxcm.json has the same data.
+2018-11-13 20:33:29,750 - 63 - Data exists. Checking update on ./tickFile/cub.json.
+2018-11-13 20:33:30,132 - 46 - cub.json has the same data.
+2018-11-13 20:33:30,132 - 104 - Wrapping up...
+2018-11-13 20:33:44,264 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
+2018-11-13 20:33:44,659 - 63 - Data exists. Checking update on ./tickFile/sre.json.
+2018-11-13 20:33:45,057 - 46 - sre.json has the same data.
+2018-11-13 20:33:45,457 - 63 - Data exists. Checking update on ./tickFile/qdel.json.
+2018-11-13 20:33:45,818 - 46 - qdel.json has the same data.
+2018-11-13 20:33:46,175 - 63 - Data exists. Checking update on ./tickFile/qcom.json.
+2018-11-13 20:33:46,530 - 46 - qcom.json has the same data.
+2018-11-13 20:33:46,921 - 63 - Data exists. Checking update on ./tickFile/nuva.json.
+2018-11-13 20:33:47,276 - 46 - nuva.json has the same data.
+2018-11-13 20:33:47,627 - 63 - Data exists. Checking update on ./tickFile/ktos.json.
+2018-11-13 20:33:47,987 - 46 - ktos.json has the same data.
+2018-11-13 20:33:48,336 - 63 - Data exists. Checking update on ./tickFile/ilmn.json.
+2018-11-13 20:33:48,699 - 46 - ilmn.json has the same data.
+2018-11-13 20:33:49,063 - 63 - Data exists. Checking update on ./tickFile/dxcm.json.
+2018-11-13 20:33:49,415 - 46 - dxcm.json has the same data.
+2018-11-13 20:33:49,765 - 63 - Data exists. Checking update on ./tickFile/cub.json.
+2018-11-13 20:33:50,128 - 46 - cub.json has the same data.
+2018-11-13 20:33:50,128 - 104 - Wrapping up...
+2018-11-13 20:35:05,875 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
+2018-11-13 20:35:06,269 - 63 - Data exists. Checking update on ./tickFile/sre.json.
+2018-11-13 20:35:06,627 - 46 - sre.json has the same data.
+2018-11-13 20:35:06,978 - 63 - Data exists. Checking update on ./tickFile/qdel.json.
+2018-11-13 20:35:07,344 - 46 - qdel.json has the same data.
+2018-11-13 20:35:07,702 - 63 - Data exists. Checking update on ./tickFile/qcom.json.
+2018-11-13 20:35:08,053 - 46 - qcom.json has the same data.
+2018-11-13 20:35:08,488 - 63 - Data exists. Checking update on ./tickFile/nuva.json.
+2018-11-13 20:35:08,920 - 46 - nuva.json has the same data.
+2018-11-13 20:35:09,267 - 63 - Data exists. Checking update on ./tickFile/ktos.json.
+2018-11-13 20:35:09,625 - 46 - ktos.json has the same data.
+2018-11-13 20:35:09,971 - 63 - Data exists. Checking update on ./tickFile/ilmn.json.
+2018-11-13 20:35:10,397 - 46 - ilmn.json has the same data.
+2018-11-13 20:35:10,750 - 63 - Data exists. Checking update on ./tickFile/dxcm.json.
+2018-11-13 20:35:11,119 - 46 - dxcm.json has the same data.
+2018-11-13 20:35:11,467 - 63 - Data exists. Checking update on ./tickFile/cub.json.
+2018-11-13 20:35:11,821 - 46 - cub.json has the same data.
+2018-11-13 20:35:11,821 - 104 - Wrapping up...
+2018-11-13 20:35:27,231 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
+2018-11-13 20:35:27,600 - 63 - Data exists. Checking update on ./tickFile/sre.json.
+2018-11-13 20:35:27,968 - 46 - sre.json has the same data.
+2018-11-13 20:35:28,334 - 63 - Data exists. Checking update on ./tickFile/qdel.json.
+2018-11-13 20:35:28,695 - 46 - qdel.json has the same data.
+2018-11-13 20:35:29,051 - 63 - Data exists. Checking update on ./tickFile/qcom.json.
+2018-11-13 20:35:29,400 - 46 - qcom.json has the same data.
+2018-11-13 20:35:29,750 - 63 - Data exists. Checking update on ./tickFile/nuva.json.
+2018-11-13 20:35:30,097 - 46 - nuva.json has the same data.
+2018-11-13 20:35:30,452 - 63 - Data exists. Checking update on ./tickFile/ktos.json.
+2018-11-13 20:35:31,101 - 46 - ktos.json has the same data.
+2018-11-13 20:35:31,447 - 63 - Data exists. Checking update on ./tickFile/ilmn.json.
+2018-11-13 20:35:31,793 - 46 - ilmn.json has the same data.
+2018-11-13 20:35:32,145 - 63 - Data exists. Checking update on ./tickFile/dxcm.json.
+2018-11-13 20:35:32,494 - 46 - dxcm.json has the same data.
+2018-11-13 20:35:32,840 - 63 - Data exists. Checking update on ./tickFile/cub.json.
+2018-11-13 20:35:33,208 - 46 - cub.json has the same data.
+2018-11-13 20:35:33,208 - 104 - Wrapping up...
+2018-11-13 20:35:33,209 - 144 - Error occured: list indices must be integers or slices, not str
+2018-11-13 20:37:36,586 - 36 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
+2018-11-13 20:37:36,970 - 63 - Data exists. Checking update on ./tickFile/sre.json.
+2018-11-13 20:37:37,332 - 46 - sre.json has the same data.
+2018-11-13 20:37:37,679 - 63 - Data exists. Checking update on ./tickFile/qdel.json.
+2018-11-13 20:37:38,028 - 46 - qdel.json has the same data.
+2018-11-13 20:37:38,374 - 63 - Data exists. Checking update on ./tickFile/qcom.json.
+2018-11-13 20:37:38,718 - 46 - qcom.json has the same data.
+2018-11-13 20:37:39,061 - 63 - Data exists. Checking update on ./tickFile/nuva.json.
+2018-11-13 20:37:39,405 - 46 - nuva.json has the same data.
+2018-11-13 20:37:39,765 - 63 - Data exists. Checking update on ./tickFile/ktos.json.
+2018-11-13 20:37:40,112 - 46 - ktos.json has the same data.
+2018-11-13 20:37:40,483 - 63 - Data exists. Checking update on ./tickFile/ilmn.json.
+2018-11-13 20:37:40,829 - 46 - ilmn.json has the same data.
+2018-11-13 20:37:41,180 - 63 - Data exists. Checking update on ./tickFile/dxcm.json.
+2018-11-13 20:37:41,530 - 46 - dxcm.json has the same data.
+2018-11-13 20:37:42,035 - 63 - Data exists. Checking update on ./tickFile/cub.json.
+2018-11-13 20:37:42,379 - 46 - cub.json has the same data.
+2018-11-13 20:37:42,379 - 104 - Wrapping up...
+2018-11-13 20:37:42,457 - 142 - Sensor file finished job in 5.87 seconds.

@@ -26,7 +26,7 @@ logging.basicConfig(
 )
 
 
-class MySensor(Sensor):
+class PhilSensor(Sensor):
     def __init__(self):
         """ read sensor settings from config file """
         with open(CONFIG_FILE) as json_text:
@@ -40,6 +40,7 @@ class MySensor(Sensor):
         j_response = response.json()
         if not self.__j_response == j_response:
             self.__j_response = j_response
+            self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%I:%M:%s %p]')
             logging.info("%s.json is now updated." % k)
         else:
             logging.info("%s.json has the same data." % k)
@@ -51,7 +52,7 @@ class MySensor(Sensor):
         if self.can_request():
             updateable = True
             if not os.path.isfile(pointer):
-                self.__settings['last_stamp'] = str(datetime.now())
+                self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%I:%M %p]')
                 with open(pointer, 'w') as updater:
                     json.dump(self.__j_response, updater)
                 with open(CONFIG_FILE, 'w') as settingUpdate:
@@ -83,35 +84,61 @@ class MySensor(Sensor):
             json.dump(self.__settings, outfile)
 
     def __eq__(self, other):
-        if isinstance(other, MySensor):
+        if isinstance(other, PhilSensor):
             return self.__j_response == other.__j_response
         return False
 
 
 if __name__ == "__main__":
-    sr = MySensor()
-    print("This is me : " + str(sr))
-    print("let's go ..")
-    ticks_scan = list.copy(sr.ticks)
-    ticks_print = list.copy(sr.ticks)
-    while ticks_scan:
-        up = sr.get_content(ticks_scan[-1])
-        if up:
-            ticks_scan.pop(-1)
-    logging.info("Wrapping up...")
-    for tick in ticks_print:
-        sTick = str(tick)
-        point = "./tickFile/" + tick + ".json"
-        with open(point, 'r') as reader:
-            data = json.load(reader)
-        print("Company: %s\n"
-              "Company Type: %s\n"
-              "Latest High: %.1f\n"
-              "Lastest Low: %.1f\n"
-              "Latest Price: %.2f\n" % (data[sTick.upper()]['quote']['companyName'],
-                                        data[sTick.upper()]['quote']['sector'],
-                                        data[sTick.upper()]['quote']['high'],
-                                        data[sTick.upper()]['quote']['low'],
-                                        data[sTick.upper()]['quote']['latestPrice']))
-    print("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
-    logging.info("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
+    try:
+        sr = PhilSensor()
+        # print("This is me : " + str(sr))
+        # print("let's go ..")
+
+        ticks_scan = list.copy(sr.ticks)
+        ticks_print = list.copy(sr.ticks)
+        while ticks_scan:
+            up = sr.get_content(ticks_scan[-1])
+            if up:
+                ticks_scan.pop(-1)
+        logging.info("Wrapping up...")
+        for tickP in ticks_print:
+            sTick = str(tickP)
+            point = "./tickFile/" + tickP + ".json"
+            with open(point, 'r') as reader:
+                data = json.load(reader)
+            with open(CONFIG_FILE, 'r') as setRead:
+                setData = json.load(setRead)
+            # print("Company: %s\n"
+            #       "Company Type: %s\n"
+            #       "Latest High: %.1f\n"
+            #       "Latest Low: %.1f\n"
+            #       "Latest Price: %.2f\n" % (data[sTick.upper()]['quote']['companyName'],
+            #                                 data[sTick.upper()]['quote']['sector'],
+            #                                 data[sTick.upper()]['quote']['high'],
+            #                                 data[sTick.upper()]['quote']['low'],
+            #                                 data[sTick.upper()]['quote']['latestPrice']))
+            print("%s's Stock History from a Month\n\n"
+                  "%s's stock has updated at %s with the following:\n"
+                  "Month-Range Highest Price: %.2f\n"
+                  "Month-Range Lowest Price: %.2f\n"
+                  "Current Running Price: %.2f\n"
+                  "Direct Feed Article:\n"
+                  "%s\nPublished At %s by %s\n"
+                  "%s\nLink: %s\n"
+                  "Image: %s" % (data[sTick.upper()]['quote']['companyName'],
+                                 data[sTick.upper()]['quote']['companyName'],
+                                 setData['last_stamp'],
+                                 data[sTick.upper()]['quote']['high'],
+                                 data[sTick.upper()]['quote']['low'],
+                                 data[sTick.upper()]['quote']['latestPrice'],
+                                 data[sTick.upper()]['news'][0]['headline'],
+                                 data[sTick.upper()]['news'][0]['datetime'],
+                                 data[sTick.upper()]['news'][0]['source'],
+                                 data[sTick.upper()]['news'][0]['summary'],
+                                 data[sTick.upper()]['news'][0]['url'],
+                                 data[sTick.upper()]['news'][0]['image']))
+        print("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
+        logging.info("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
+    except Exception as e:
+        logging.warning("Error occured: %s" % e)

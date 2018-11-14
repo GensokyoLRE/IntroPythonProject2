@@ -1,16 +1,1 @@
-{
-  "service_url": "https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,chart&range=1m",
-  "request_delta": 5,
-  "last_request": 1541739520,
-  "last_stamp": "2018-11-08 20:58:48.606471",
-  "ticks": [
-    "cub",
-    "dxcm",
-    "ilmn",
-    "ktos",
-    "nuva",
-    "qcom",
-    "qdel",
-    "sre"
-  ]
-}
+{"service_url": "https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1", "request_delta": 5, "last_request": 1542157111, "last_stamp": "November 13, 2018 [04:58 PM]", "ticks": ["cub", "dxcm", "ilmn", "ktos", "nuva", "qcom", "qdel", "sre"]}
