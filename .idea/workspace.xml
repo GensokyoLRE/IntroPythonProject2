@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed575377-1a42-47a6-8411-69ba138c9040" name="Default Changelist" comment="I'm doing things? I think">
+    <list default="true" id="ed575377-1a42-47a6-8411-69ba138c9040" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/PhillipSensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/PhillipSensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/logs/phillipsensor.log" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/logs/phillipsensor.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/sensor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +20,7 @@
     <session id="697742479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -62,14 +59,14 @@
           <entry key="json" value="391" />
           <entry key="md" value="365" />
           <entry key="py" value="9226" />
-          <entry key="txt" value="74" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="391" />
           <entry key="Markdown" value="365" />
-          <entry key="PLAIN_TEXT" value="100" />
+          <entry key="PLAIN_TEXT" value="116" />
           <entry key="Python" value="9513" />
         </counts>
       </usages-collector>
@@ -376,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542170322111</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Submit Time!">
+      <created>1542333559718</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542333559718</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -415,7 +419,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bigger steps!" />
     <MESSAGE value="I'm doing things? I think" />
-    <option name="LAST_COMMIT_MESSAGE" value="I'm doing things? I think" />
+    <MESSAGE value="Submit Time!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit Time!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/PyCharmProjects/stuffTried/League/eun1.json">
