@@ -21,6 +21,9 @@ import time
 
 # noinspection PyMethodMayBeStatic
 class Sensor(ABC):
+    def __init__(self):
+        self.props = {}
+
     def __str__(self):
         return self.__class__.__name__
 
@@ -63,10 +66,11 @@ class SensorX(Sensor):
 
     def __init__(self, file_name):
         """ read sensor settings from config file into self.props """
+        super().__init__()
         self.file_name = file_name
         with open(file_name + '.json') as json_text:
             self.props = json.load(json_text)
-        logging.info("Sensor just woke up .. ready to be called")
+        logging.info(self.__class__.__name__ + " just woke up .. ready to be called")
 
     def _request_allowed(self):
         """ check if it's OK to call the 3rd party web-service again, or if we rathe rwait a little longer """
@@ -96,11 +100,18 @@ class SensorX(Sensor):
             logging.error("buffer: " + str(e))
             return None
 
+    def get_featured_image(self):
+        """ needs to be overridden if inheriting from SensorX provides a featured image """
+        return None
+
     def has_updates(self, k):
+        """ needs to be implemented by class inheriting from SensorX """
         pass
 
     def get_content(self, k):
+        """ needs to be implemented by class inheriting from SensorX """
         pass
 
     def get_all(self):
+        """ needs to be implemented by class inheriting from SensorX """
         pass

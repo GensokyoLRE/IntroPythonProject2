@@ -39,62 +39,91 @@ class PhilSensor(SensorX):
         self.__url = self.__settings.get('service_url')
         self.ticks = self.__settings.get('ticks')
         logging.info("This sensor just woke up .. ready to call " + self.__url)
+        for index in range(len(self.ticks)):
+            self.get_content(index)
 
     def has_updates(self, k):
         """
         Checks if a file actually needs an update or if it's completely fine as is.
         Arguements:
-            String k (stock ticker lettering)
+            int k (index of stock)
         """
-        response = requests.get(self.__url % k)
-        j_response = response.json()
-        if not self.__j_response == j_response:
-            self.__j_response = j_response
-            self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%I:%M:%s %p]')
-            logging.info("%s.json is now updated." % k)
-        else:
+        response = requests.get(self.__url % self.ticks[k])
+        self.__j_response = response.json()
+        up_point = "./tickFile/" + self.ticks[k] + ".json"
+        with open(up_point, 'r') as updateRead:
+            read_it = json.load(updateRead)
+        j_response = read_it
+        if self.__j_response == j_response:
             logging.info("%s.json has the same data." % k)
+        else:
+            with open(up_point, 'w') as updateWrite:
+                json.dump(self.__j_response, updateWrite)
+            self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%H:%M:%S %p]')
+            self.__save_settings()
+            logging.info("%s.json is now updated." % k)
 
     def get_content(self, k):
         """
         Gets the content from the IEX server based on the stock provided in variable k.
-        :param k: stock ticker in string format
+        :param k: stock ticker index
         :return: Returns if it can update and move on or not.
         """
-        response = requests.get(self.__url % k)
+        response = requests.get(self.__url % self.ticks[k])
         self.__j_response = response.json()
-        pointer = "./tickFile/" + k + ".json"
-        if self.can_request():
-            updateable = True
-            if not os.path.isfile(pointer):
-                self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%I:%M %p]')
-                with open(pointer, 'w') as updater:
-                    json.dump(self.__j_response, updater)
-                with open(CONFIG_FILE, 'w') as settingUpdate:
-                    json.dump(self.__settings, settingUpdate)
-                self.__settings['last_request'] = int(time.time())
-                logging.info("Data created for %s." % pointer)
-            else:
-                logging.info("Data exists. Checking update on %s." % pointer)
-                self.has_updates(k)
+        pointer = "./tickFile/" + self.ticks[k] + ".json"
+        # if self.can_request():
+        if not os.path.isfile(pointer):
+            self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%H:%M:%S %p]')
+            self.__save_settings()
+            with open(pointer, 'w') as updater:
+                json.dump(self.__j_response, updater)
+            with open(CONFIG_FILE, 'w') as settingUpdate:
+                json.dump(self.__settings, settingUpdate)
+            self.__settings['last_request'] = int(time.time())
+            logging.info("Data created for %s." % pointer)
         else:
-            updateable = False
-            logging.info("Still on the clock. Sleeping for %s seconds cooldown."
-                         % int(time.time() - self.__settings['last_request']))
-            time.sleep(int(time.time() - self.__settings['last_request']))
-        return updateable
+            self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%H:%M:%S %p]')
+            logging.info("Data exists. Checking update on %s." % pointer)
+            self.__save_settings()
+            self.has_updates(k)
+        # else:
+        #     updateable = False
+        #     logging.info("Still on the clock. Sleeping for %s seconds cooldown."
+        #                  % int(time.time() - self.__settings['last_request']))
+        #     time.sleep(int(time.time() - self.__settings['last_request']))
+        # return updateable
 
     def get_all(self):
         """
         Gets all data locally stored on the stocks given
         :return: Returns all files as loaded JSONs.
         """
-        all_list = []
-        for tick in self.ticks:
-            pointer = "./tickFile/" + tick + ".json"
+        all_list, patterns = [], ['k', 'date', 'caption', 'summary', 'story', 'img', 'origin']
+        x = 0
+        for gtick in self.ticks:
+            pointer = "./tickFile/" + gtick + ".json"
+            pattern_final = {}
             with open(pointer, 'r') as allRead:
                 read_out = json.load(allRead)
-            all_list.append(read_out)
+            with open(CONFIG_FILE, 'r') as setRead:
+                set_read_out = json.load(setRead)
+
+            app_pattern = [x,
+                           set_read_out['last_stamp'],
+                           "%s's Stock History from a Month + News  "
+                           % read_out[str(gtick).upper()]['quote']['companyName'],
+                           "Last Month Stock reports and last news report for %s  "
+                           % read_out[str(gtick).upper()]['quote']['companyName'],
+                           read_out[str(gtick).upper()]['news'][0]['summary'],
+                           read_out[str(gtick).upper()]['news'][0]['image'],
+                           read_out[str(gtick).upper()]['news'][0]['url']]
+            pattern_arr = 0
+            while pattern_arr < len(patterns):
+                pattern_final[patterns[pattern_arr]] = app_pattern[pattern_arr]
+                pattern_arr += 1
+            x += 1
+            all_list.append(pattern_final)
         return all_list
 
     def can_request(self):
@@ -124,8 +153,6 @@ class PhilSensor(SensorX):
 if __name__ == "__main__":
     try:
         sr = PhilSensor()
-        # print("This is me : " + str(sr))
-        # print("let's go ..")
         ticks_scan = list.copy(sr.ticks)
         ticks_print = list.copy(sr.ticks)
         while ticks_scan:
@@ -146,17 +173,15 @@ if __name__ == "__main__":
                 data = json.load(reader)
             with open(CONFIG_FILE, 'r') as setRead:
                 setData = json.load(setRead)
-            print("%s's Stock History from a Month  "
-                  "%s's stock has updated at %s with the following:  "
-                  "Month-Range Highest Price: %.2f  "
-                  "Month-Range Lowest Price: %.2f  "
-                  "Current Running Price: %.2f  "
-                  "Direct Feed Article:  "
-                  "%s  "
-                  "Published At %s by %s  "
-                  "%s  "
-                  "Link: %s  "
-                  "Image: %s  " % (data[sTick.upper()]['quote']['companyName'],
+            print("%s's Stock History from a Month\n"
+                  "%s's stock has updated at %s with the following:\n"
+                  "Month-Range Highest Price: %.2f\n"
+                  "Month-Range Lowest Price: %.2f\n"
+                  "Current Running Price: %.2f\n"
+                  "Direct Feed Article:\n%s\n"
+                  "Published At %s by %s\n%s\n"
+                  "Link: %s\n"
+                  "Image: %s\n" % (data[sTick.upper()]['quote']['companyName'],
                                    data[sTick.upper()]['quote']['companyName'],
                                    setData['last_stamp'],
                                    data[sTick.upper()]['quote']['high'],
@@ -178,6 +203,8 @@ if __name__ == "__main__":
             logging.error("Timeout occured. Unable to connect.")
         elif isinstance(e, requests.exceptions.HTTPError):
             logging.error("400 or 500 error hit. Unable to Connect.")
+        else:
+            logging.error("Hit an error: %s" % str(e))
         er.get_all()
         tick_e_print = list.copy(er.ticks)
         for tick in tick_e_print:
@@ -187,17 +214,17 @@ if __name__ == "__main__":
                 data = json.load(reader)
             with open(CONFIG_FILE, 'r') as setRead:
                 setData = json.load(setRead)
-            print("%s's Stock History from a Month  "
-                  "%s's stock has updated at %s with the following:  "
-                  "Month-Range Highest Price: %.2f  "
-                  "Month-Range Lowest Price: %.2f  "
-                  "Current Running Price: %.2f  "
-                  "Direct Feed Article:  "
-                  "%s  "
-                  "Published At %s by %s  "
-                  "%s  "
-                  "Link: %s  "
-                  "Image: %s  " % (data[eTick.upper()]['quote']['companyName'],
+            print("%s's Stock History from a Month\n"
+                  "%s's stock has updated at %s with the following:\n"
+                  "Month-Range Highest Price: %.2f\n"
+                  "Month-Range Lowest Price: %.2f\n"
+                  "Current Running Price: %.2f\n"
+                  "Direct Feed Article:\n"
+                  "%s\n"
+                  "Published At %s by %s\n"
+                  "%s\n"
+                  "Link: %s\n"
+                  "Image: %s\n" % (data[eTick.upper()]['quote']['companyName'],
                                    data[eTick.upper()]['quote']['companyName'],
                                    setData['last_stamp'],
                                    data[eTick.upper()]['quote']['high'],

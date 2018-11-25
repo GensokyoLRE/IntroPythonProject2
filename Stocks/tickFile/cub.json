@@ -6,124 +6,54 @@
       "primaryExchange": "New York Stock Exchange",
       "sector": "Industrials",
       "calculationPrice": "close",
-      "open": 66.79,
-      "openTime": 1542119400154,
-      "close": 65.15,
-      "closeTime": 1542142922093,
-      "high": 66.83,
-      "low": 65.12,
-      "latestPrice": 65.15,
+      "open": 63.71,
+      "openTime": 1542983400156,
+      "close": 64.13,
+      "closeTime": 1542996121082,
+      "high": 65.26,
+      "low": 63.205,
+      "latestPrice": 64.13,
       "latestSource": "Close",
-      "latestTime": "November 13, 2018",
-      "latestUpdate": 1542142922093,
-      "latestVolume": 108706,
-      "iexRealtimePrice": 65.18,
-      "iexRealtimeSize": 43,
-      "iexLastUpdated": 1542142786088,
-      "delayedPrice": 65.15,
-      "delayedPriceTime": 1542142922093,
-      "extendedPrice": 65.15,
-      "extendedChange": 0,
-      "extendedChangePercent": 0,
-      "extendedPriceTime": 1542144663886,
-      "previousClose": 66.77,
-      "change": -1.62,
-      "changePercent": -0.02426,
-      "iexMarketPercent": 0.0456,
-      "iexVolume": 4957,
-      "avgTotalVolume": 135408,
-      "iexBidPrice": 0,
-      "iexBidSize": 0,
-      "iexAskPrice": 0,
-      "iexAskSize": 0,
-      "marketCap": 1775494577,
-      "peRatio": 167.05,
+      "latestTime": "November 23, 2018",
+      "latestUpdate": 1542996121082,
+      "latestVolume": 50996,
+      "iexRealtimePrice": null,
+      "iexRealtimeSize": null,
+      "iexLastUpdated": null,
+      "delayedPrice": 64.13,
+      "delayedPriceTime": 1542996121082,
+      "extendedPrice": 64.542,
+      "extendedChange": 0.412,
+      "extendedChangePercent": 0.00642,
+      "extendedPriceTime": 1542996662092,
+      "previousClose": 64.14,
+      "change": -0.01,
+      "changePercent": -0.00016,
+      "iexMarketPercent": null,
+      "iexVolume": null,
+      "avgTotalVolume": 145683,
+      "iexBidPrice": null,
+      "iexBidSize": null,
+      "iexAskPrice": null,
+      "iexAskSize": null,
+      "marketCap": 1753185363,
+      "peRatio": 164.44,
       "week52High": 77.35,
-      "week52Low": 52,
-      "ytdChange": 0.10902920345570877
+      "week52Low": 52.25,
+      "ytdChange": 0.08832040463703165
     },
     "news": [
       {
-        "datetime": "2018-11-07T15:00:00-05:00",
-        "headline": "Cubic to Showcase Expeditionary C4ISR Solutions at MilCIS 2018",
+        "datetime": "2018-11-20T07:00:00-05:00",
+        "headline": "Cubic to Showcase Next-Generation Multi-Domain Training Innovations at I/ITSEC 2018",
         "source": "PR Newswire",
-        "url": "https://api.iextrading.com/1.0/stock/cub/article/4542013479335077",
-        "summary": "      SAN DIEGO ,  Nov. 7, 2018  /PRNewswire/ --  Cubic Corporation  (NYSE: CUB) today announced that its  Cubic Mission Solutions  business division will demonstrate expeditionary Command, Control, Communications, Computers, Intelligence, Surveillance and Reconnaissance (C4ISR) solutions at the \u2026",
-        "related": "AER31052,AER31052107,Aerospace and Defense,Aerospace/Defense - Major Diversified,Aerospace/Defense Products & Services,AMEX0001,ASIA0001,Asia Pacific,AUSTRALI,CUB,Electronics,IND310,Industrial Goods,NYSE0001",
-        "image": "https://api.iextrading.com/1.0/stock/cub/news-image/4542013479335077"
+        "url": "https://api.iextrading.com/1.0/stock/cub/article/7859418178325604",
+        "summary": "      SAN DIEGO ,  Nov. 20, 2018  /PRNewswire/ --    Cubic Corporation   (NYSE: CUB) today announced that its   Cubic Global Defense   (CGD) business division will demonstrate its broad portfolio of advanced training solutions at the   2018 Interservice/Industry Training Simulation an\u2026",
+        "related": "AER31052,AER31052107,Aerospace and Defense,Aerospace/Defense - Major Diversified,Aerospace/Defense Products & Services,Computer Hardware,Computer Software,Computer,CUB,Data Warehousing,Electronics,ENVIRONM,FLORIDA1,Futures Trading,GAMEMULT,IND310,Industrial Goods,Internet,MARINECO,NYSE0001,Software,Computing and Information Technology,Transportation,USAIRFOR",
+        "image": "https://api.iextrading.com/1.0/stock/cub/news-image/7859418178325604"
       }
     ],
     "chart": [
-      {
-        "date": "2018-10-15",
-        "open": 67.73,
-        "high": 69.4,
-        "low": 67.07,
-        "close": 68.56,
-        "volume": 134709,
-        "unadjustedVolume": 134709,
-        "change": 0.88,
-        "changePercent": 1.3,
-        "vwap": 68.5468,
-        "label": "Oct 15",
-        "changeOverTime": 0
-      },
-      {
-        "date": "2018-10-16",
-        "open": 68.81,
-        "high": 70.535,
-        "low": 68.24,
-        "close": 70.41,
-        "volume": 131816,
-        "unadjustedVolume": 131816,
-        "change": 1.85,
-        "changePercent": 2.698,
-        "vwap": 69.7921,
-        "label": "Oct 16",
-        "changeOverTime": 0.02698366394399058
-      },
-      {
-        "date": "2018-10-17",
-        "open": 70.35,
-        "high": 70.36,
-        "low": 68.79,
-        "close": 69.22,
-        "volume": 118014,
-        "unadjustedVolume": 118014,
-        "change": -1.19,
-        "changePercent": -1.69,
-        "vwap": 69.3354,
-        "label": "Oct 17",
-        "changeOverTime": 0.009626604434072296
-      },
-      {
-        "date": "2018-10-18",
-        "open": 68.68,
-        "high": 68.68,
-        "low": 67.13,
-        "close": 67.38,
-        "volume": 67671,
-        "unadjustedVolume": 67671,
-        "change": -1.84,
-        "changePercent": -2.658,
-        "vwap": 67.6251,
-        "label": "Oct 18",
-        "changeOverTime": -0.01721120186697793
-      },
-      {
-        "date": "2018-10-19",
-        "open": 67.23,
-        "high": 67.365,
-        "low": 65.49,
-        "close": 65.81,
-        "volume": 84429,
-        "unadjustedVolume": 84429,
-        "change": -1.57,
-        "changePercent": -2.33,
-        "vwap": 66.4333,
-        "label": "Oct 19",
-        "changeOverTime": -0.04011085180863477
-      },
       {
         "date": "2018-10-22",
         "open": 65.8,
@@ -136,7 +66,7 @@
         "changePercent": -0.061,
         "vwap": 65.7402,
         "label": "Oct 22",
-        "changeOverTime": -0.04069428238039682
+        "changeOverTime": 0
       },
       {
         "date": "2018-10-23",
@@ -150,7 +80,7 @@
         "changePercent": -0.943,
         "vwap": 65.0165,
         "label": "Oct 23",
-        "changeOverTime": -0.04973745624270707
+        "changeOverTime": -0.009426790329937516
       },
       {
         "date": "2018-10-24",
@@ -164,7 +94,7 @@
         "changePercent": -1.919,
         "vwap": 64.7829,
         "label": "Oct 24",
-        "changeOverTime": -0.06796966161026843
+        "changeOverTime": -0.028432415995134522
       },
       {
         "date": "2018-10-25",
@@ -178,7 +108,7 @@
         "changePercent": 2.238,
         "vwap": 65.2534,
         "label": "Oct 25",
-        "changeOverTime": -0.04711201866977835
+        "changeOverTime": -0.006689980234149274
       },
       {
         "date": "2018-10-26",
@@ -192,7 +122,7 @@
         "changePercent": -0.077,
         "vwap": 65.2308,
         "label": "Oct 26",
-        "changeOverTime": -0.04784130688448076
+        "changeOverTime": -0.0074502052607571066
       },
       {
         "date": "2018-10-29",
@@ -206,7 +136,7 @@
         "changePercent": -2.221,
         "vwap": 64.714,
         "label": "Oct 29",
-        "changeOverTime": -0.06899066511085186
+        "changeOverTime": -0.029496731032385554
       },
       {
         "date": "2018-10-30",
@@ -220,7 +150,7 @@
         "changePercent": 1.535,
         "vwap": 64.424,
         "label": "Oct 30",
-        "changeOverTime": -0.05469661610268378
+        "changeOverTime": -0.014596320510871124
       },
       {
         "date": "2018-10-31",
@@ -234,7 +164,7 @@
         "changePercent": 1.234,
         "vwap": 66.1562,
         "label": "Oct 31",
-        "changeOverTime": -0.043028004667444615
+        "changeOverTime": -0.002432720085145151
       },
       {
         "date": "2018-11-01",
@@ -248,7 +178,7 @@
         "changePercent": 0.396,
         "vwap": 66.2051,
         "label": "Nov 1",
-        "changeOverTime": -0.039235705950991795
+        "changeOverTime": 0.0015204500532158816
       },
       {
         "date": "2018-11-02",
@@ -262,7 +192,7 @@
         "changePercent": -0.182,
         "vwap": 65.8331,
         "label": "Nov 2",
-        "changeOverTime": -0.040985997666277744
+        "changeOverTime": -0.0003040900106430899
       },
       {
         "date": "2018-11-05",
@@ -276,7 +206,7 @@
         "changePercent": 0.122,
         "vwap": 65.6944,
         "label": "Nov 5",
-        "changeOverTime": -0.03981913652275385
+        "changeOverTime": 0.0009122700319294857
       },
       {
         "date": "2018-11-06",
@@ -290,7 +220,7 @@
         "changePercent": 2.598,
         "vwap": 67.3247,
         "label": "Nov 6",
-        "changeOverTime": -0.01487747957992993
+        "changeOverTime": 0.026911965941918966
       },
       {
         "date": "2018-11-07",
@@ -304,7 +234,7 @@
         "changePercent": 3.198,
         "vwap": 69.1072,
         "label": "Nov 7",
-        "changeOverTime": 0.016627771295215876
+        "changeOverTime": 0.059753687091379154
       },
       {
         "date": "2018-11-08",
@@ -318,7 +248,7 @@
         "changePercent": -0.473,
         "vwap": 69.3365,
         "label": "Nov 8",
-        "changeOverTime": 0.01181446907817973
+        "changeOverTime": 0.0547362019157672
       },
       {
         "date": "2018-11-09",
@@ -332,7 +262,7 @@
         "changePercent": -0.447,
         "vwap": 68.9655,
         "label": "Nov 9",
-        "changeOverTime": 0.007292882147024504
+        "changeOverTime": 0.050022806750798336
       },
       {
         "date": "2018-11-12",
@@ -346,7 +276,119 @@
         "changePercent": -3.316,
         "vwap": 67.1011,
         "label": "Nov 12",
-        "changeOverTime": -0.026108518086347815
+        "changeOverTime": 0.015204500532157519
+      },
+      {
+        "date": "2018-11-13",
+        "open": 66.79,
+        "high": 66.83,
+        "low": 65.12,
+        "close": 65.15,
+        "volume": 110046,
+        "unadjustedVolume": 110046,
+        "change": -1.62,
+        "changePercent": -2.426,
+        "vwap": 65.7013,
+        "label": "Nov 13",
+        "changeOverTime": -0.009426790329937516
+      },
+      {
+        "date": "2018-11-14",
+        "open": 65.63,
+        "high": 66.29,
+        "low": 63.59,
+        "close": 63.93,
+        "volume": 86806,
+        "unadjustedVolume": 86806,
+        "change": -1.22,
+        "changePercent": -1.873,
+        "vwap": 64.5335,
+        "label": "Nov 14",
+        "changeOverTime": -0.02797628097916978
+      },
+      {
+        "date": "2018-11-15",
+        "open": 65.53,
+        "high": 66.77,
+        "low": 59.94,
+        "close": 65.9,
+        "volume": 174745,
+        "unadjustedVolume": 174745,
+        "change": 1.97,
+        "changePercent": 3.081,
+        "vwap": 64.552,
+        "label": "Nov 15",
+        "changeOverTime": 0.0019765850691806247
+      },
+      {
+        "date": "2018-11-16",
+        "open": 65.91,
+        "high": 69.09,
+        "low": 65.58,
+        "close": 68.29,
+        "volume": 271154,
+        "unadjustedVolume": 271154,
+        "change": 2.39,
+        "changePercent": 3.627,
+        "vwap": 68.1324,
+        "label": "Nov 16",
+        "changeOverTime": 0.038315341341037104
+      },
+      {
+        "date": "2018-11-19",
+        "open": 68.05,
+        "high": 68.83,
+        "low": 65.41,
+        "close": 65.72,
+        "volume": 199751,
+        "unadjustedVolume": 199751,
+        "change": -2.57,
+        "changePercent": -3.763,
+        "vwap": 66.5602,
+        "label": "Nov 19",
+        "changeOverTime": -0.0007602250266078328
+      },
+      {
+        "date": "2018-11-20",
+        "open": 64.82,
+        "high": 65.485,
+        "low": 63.67,
+        "close": 64.23,
+        "volume": 458215,
+        "unadjustedVolume": 458215,
+        "change": -1.49,
+        "changePercent": -2.267,
+        "vwap": 64.3884,
+        "label": "Nov 20",
+        "changeOverTime": -0.02341493081952246
+      },
+      {
+        "date": "2018-11-21",
+        "open": 64.59,
+        "high": 65.375,
+        "low": 63.78,
+        "close": 64.14,
+        "volume": 100387,
+        "unadjustedVolume": 100387,
+        "change": -0.09,
+        "changePercent": -0.14,
+        "vwap": 64.3747,
+        "label": "Nov 21",
+        "changeOverTime": -0.024783335867416687
+      },
+      {
+        "date": "2018-11-23",
+        "open": 63.71,
+        "high": 65.26,
+        "low": 63.205,
+        "close": 64.13,
+        "volume": 51460,
+        "unadjustedVolume": 51460,
+        "change": -0.01,
+        "changePercent": -0.016,
+        "vwap": 64.541,
+        "label": "Nov 23",
+        "changeOverTime": -0.02493538087273834
       }
     ]
   }
