@@ -161,40 +161,40 @@ if __name__ == "__main__":
             if up:
                 ticks_scan.pop(-1)
         logging.info("Wrapping up...")
-        for tickP in ticks_print:
-            """
-            Prints each stock ticker's data, in the following order:
-            Name, Highest Price within month, Lowest price within month, Current running price, last article recorded
-            on IEX database with article link and image link
-            """
-            sTick = str(tickP)
-            point = "./tickFile/" + tickP + ".json"
-            with open(point, 'r') as reader:
-                data = json.load(reader)
-            with open(CONFIG_FILE, 'r') as setRead:
-                setData = json.load(setRead)
-            print("%s's Stock History from a Month\n"
-                  "%s's stock has updated at %s with the following:\n"
-                  "Month-Range Highest Price: %.2f\n"
-                  "Month-Range Lowest Price: %.2f\n"
-                  "Current Running Price: %.2f\n"
-                  "Direct Feed Article:\n%s\n"
-                  "Published At %s by %s\n%s\n"
-                  "Link: %s\n"
-                  "Image: %s\n" % (data[sTick.upper()]['quote']['companyName'],
-                                   data[sTick.upper()]['quote']['companyName'],
-                                   setData['last_stamp'],
-                                   data[sTick.upper()]['quote']['high'],
-                                   data[sTick.upper()]['quote']['low'],
-                                   data[sTick.upper()]['quote']['latestPrice'],
-                                   data[sTick.upper()]['news'][0]['headline'],
-                                   data[sTick.upper()]['news'][0]['datetime'],
-                                   data[sTick.upper()]['news'][0]['source'],
-                                   data[sTick.upper()]['news'][0]['summary'],
-                                   data[sTick.upper()]['news'][0]['url'],
-                                   data[sTick.upper()]['news'][0]['image']))
-        print("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
-        logging.info("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
+        # for tickP in ticks_print:
+        #     """
+        #     Prints each stock ticker's data, in the following order:
+        #     Name, Highest Price within month, Lowest price within month, Current running price, last article recorded
+        #     on IEX database with article link and image link
+        #     """
+        #     sTick = str(tickP)
+        #     point = "./tickFile/" + tickP + ".json"
+        #     with open(point, 'r') as reader:
+        #         data = json.load(reader)
+        #     with open(CONFIG_FILE, 'r') as setRead:
+        #         setData = json.load(setRead)
+        #     print("%s's Stock History from a Month\n"
+        #           "%s's stock has updated at %s with the following:\n"
+        #           "Month-Range Highest Price: %.2f\n"
+        #           "Month-Range Lowest Price: %.2f\n"
+        #           "Current Running Price: %.2f\n"
+        #           "Direct Feed Article:\n%s\n"
+        #           "Published At %s by %s\n%s\n"
+        #           "Link: %s\n"
+        #           "Image: %s\n" % (data[sTick.upper()]['quote']['companyName'],
+        #                            data[sTick.upper()]['quote']['companyName'],
+        #                            setData['last_stamp'],
+        #                            data[sTick.upper()]['quote']['high'],
+        #                            data[sTick.upper()]['quote']['low'],
+        #                            data[sTick.upper()]['quote']['latestPrice'],
+        #                            data[sTick.upper()]['news'][0]['headline'],
+        #                            data[sTick.upper()]['news'][0]['datetime'],
+        #                            data[sTick.upper()]['news'][0]['source'],
+        #                            data[sTick.upper()]['news'][0]['summary'],
+        #                            data[sTick.upper()]['news'][0]['url'],
+        #                            data[sTick.upper()]['news'][0]['image']))
+        # print("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
+        # logging.info("Sensor file finished job in %.2f seconds." % (time.time() - startTime))
     except Exception as e:
         er = PhilSensor()
         if isinstance(e, requests.exceptions.ConnectionError):

@@ -1,113 +1,18 @@
-2018-11-15 20:38:20,381 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-15 20:38:20,820 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,820 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,820 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,820 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,820 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,821 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,821 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:20,821 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-15 20:38:21,062 - 62 - 0.json is now updated.
-2018-11-24 15:49:51,546 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 15:56:41,788 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 15:58:32,595 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 15:58:58,639 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 15:58:59,069 - 88 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 15:58:59,494 - 58 - 0.json has the same data.
-2018-11-24 15:58:59,880 - 88 - Data exists. Checking update on ./tickFile/dxcm.json.
-2018-11-24 15:59:00,619 - 64 - 1.json is now updated.
-2018-11-24 15:59:01,010 - 88 - Data exists. Checking update on ./tickFile/ilmn.json.
-2018-11-24 15:59:01,707 - 64 - 2.json is now updated.
-2018-11-24 15:59:02,060 - 88 - Data exists. Checking update on ./tickFile/ktos.json.
-2018-11-24 15:59:02,522 - 64 - 3.json is now updated.
-2018-11-24 15:59:02,945 - 88 - Data exists. Checking update on ./tickFile/nuva.json.
-2018-11-24 15:59:03,322 - 64 - 4.json is now updated.
-2018-11-24 15:59:03,976 - 88 - Data exists. Checking update on ./tickFile/qcom.json.
-2018-11-24 15:59:04,373 - 64 - 5.json is now updated.
-2018-11-24 15:59:04,793 - 88 - Data exists. Checking update on ./tickFile/qdel.json.
-2018-11-24 15:59:05,233 - 64 - 6.json is now updated.
-2018-11-24 15:59:05,590 - 88 - Data exists. Checking update on ./tickFile/sre.json.
-2018-11-24 15:59:06,063 - 64 - 7.json is now updated.
-2018-11-24 16:05:56,426 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 16:05:57,007 - 87 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 16:05:57,391 - 58 - 0.json has the same data.
-2018-11-24 16:06:06,197 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 16:06:07,403 - 87 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 16:06:07,782 - 58 - 0.json has the same data.
-2018-11-24 16:06:08,173 - 87 - Data exists. Checking update on ./tickFile/dxcm.json.
-2018-11-24 16:06:08,564 - 58 - 1.json has the same data.
-2018-11-24 16:06:08,930 - 87 - Data exists. Checking update on ./tickFile/ilmn.json.
-2018-11-24 16:06:09,288 - 58 - 2.json has the same data.
-2018-11-24 16:06:09,953 - 87 - Data exists. Checking update on ./tickFile/ktos.json.
-2018-11-24 16:06:10,370 - 58 - 3.json has the same data.
-2018-11-24 16:06:10,812 - 87 - Data exists. Checking update on ./tickFile/nuva.json.
-2018-11-24 16:06:11,171 - 58 - 4.json has the same data.
-2018-11-24 16:06:11,548 - 87 - Data exists. Checking update on ./tickFile/qcom.json.
-2018-11-24 16:06:11,956 - 58 - 5.json has the same data.
-2018-11-24 16:06:12,361 - 87 - Data exists. Checking update on ./tickFile/qdel.json.
-2018-11-24 16:06:12,845 - 58 - 6.json has the same data.
-2018-11-24 16:06:13,498 - 87 - Data exists. Checking update on ./tickFile/sre.json.
-2018-11-24 16:06:13,847 - 58 - 7.json has the same data.
-2018-11-24 16:07:10,829 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 16:07:50,396 - 87 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 16:08:59,092 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 16:09:11,808 - 87 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 16:09:43,971 - 64 - 0.json is now updated.
-2018-11-24 16:09:51,889 - 87 - Data exists. Checking update on ./tickFile/dxcm.json.
-2018-11-24 16:10:03,594 - 64 - 1.json is now updated.
-2018-11-24 16:10:58,157 - 87 - Data exists. Checking update on ./tickFile/ilmn.json.
-2018-11-24 16:10:58,553 - 64 - 2.json is now updated.
-2018-11-24 16:10:58,904 - 87 - Data exists. Checking update on ./tickFile/ktos.json.
-2018-11-24 16:10:59,293 - 64 - 3.json is now updated.
-2018-11-24 16:10:59,657 - 87 - Data exists. Checking update on ./tickFile/nuva.json.
-2018-11-24 16:11:00,163 - 64 - 4.json is now updated.
-2018-11-24 16:11:00,527 - 87 - Data exists. Checking update on ./tickFile/qcom.json.
-2018-11-24 16:11:00,921 - 64 - 5.json is now updated.
-2018-11-24 16:11:01,284 - 87 - Data exists. Checking update on ./tickFile/qdel.json.
-2018-11-24 16:11:01,668 - 64 - 6.json is now updated.
-2018-11-24 16:11:02,074 - 87 - Data exists. Checking update on ./tickFile/sre.json.
-2018-11-24 16:11:02,470 - 64 - 7.json is now updated.
-2018-11-24 16:11:03,085 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,085 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,085 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,085 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,086 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,086 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,086 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,086 - 53 - Incomplete record, won't be published PhilSensor
-2018-11-24 16:11:03,470 - 58 - 0.json has the same data.
-2018-11-24 16:15:47,213 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 16:15:47,632 - 87 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 16:15:48,028 - 58 - 0.json has the same data.
-2018-11-24 16:15:48,408 - 87 - Data exists. Checking update on ./tickFile/dxcm.json.
-2018-11-24 16:15:48,790 - 58 - 1.json has the same data.
-2018-11-24 16:15:49,185 - 87 - Data exists. Checking update on ./tickFile/ilmn.json.
-2018-11-24 16:15:49,561 - 58 - 2.json has the same data.
-2018-11-24 16:15:49,919 - 87 - Data exists. Checking update on ./tickFile/ktos.json.
-2018-11-24 16:15:50,309 - 58 - 3.json has the same data.
-2018-11-24 16:15:50,863 - 87 - Data exists. Checking update on ./tickFile/nuva.json.
-2018-11-24 16:15:51,451 - 58 - 4.json has the same data.
-2018-11-24 16:15:51,848 - 87 - Data exists. Checking update on ./tickFile/qcom.json.
-2018-11-24 16:15:52,242 - 58 - 5.json has the same data.
-2018-11-24 16:15:52,718 - 87 - Data exists. Checking update on ./tickFile/qdel.json.
-2018-11-24 16:15:53,194 - 58 - 6.json has the same data.
-2018-11-24 16:15:53,650 - 87 - Data exists. Checking update on ./tickFile/sre.json.
-2018-11-24 16:15:54,199 - 58 - 7.json has the same data.
-2018-11-24 16:16:59,212 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
-2018-11-24 16:16:59,803 - 87 - Data exists. Checking update on ./tickFile/cub.json.
-2018-11-24 16:17:00,196 - 58 - 0.json has the same data.
-2018-11-24 16:17:00,678 - 87 - Data exists. Checking update on ./tickFile/dxcm.json.
-2018-11-24 16:17:01,065 - 58 - 1.json has the same data.
-2018-11-24 16:17:01,445 - 87 - Data exists. Checking update on ./tickFile/ilmn.json.
-2018-11-24 16:17:01,809 - 58 - 2.json has the same data.
-2018-11-24 16:17:02,179 - 87 - Data exists. Checking update on ./tickFile/ktos.json.
-2018-11-24 16:17:02,582 - 58 - 3.json has the same data.
-2018-11-24 16:17:03,011 - 87 - Data exists. Checking update on ./tickFile/nuva.json.
-2018-11-24 16:17:03,518 - 58 - 4.json has the same data.
-2018-11-24 16:17:03,997 - 87 - Data exists. Checking update on ./tickFile/qcom.json.
-2018-11-24 16:17:04,428 - 58 - 5.json has the same data.
-2018-11-24 16:17:05,015 - 87 - Data exists. Checking update on ./tickFile/qdel.json.
-2018-11-24 16:17:05,483 - 58 - 6.json has the same data.
-2018-11-24 16:17:05,850 - 87 - Data exists. Checking update on ./tickFile/sre.json.
-2018-11-24 16:17:06,224 - 58 - 7.json has the same data.
-2018-11-24 16:18:00,078 - 53 - Incomplete record, won't be published PhilSensor
+2018-11-24 18:49:14,815 - 41 - This sensor just woke up .. ready to call https://api.iextrading.com/1.0/stock/market/batch?symbols=%s&types=quote,news,chart&range=1m&last=1
+2018-11-24 18:49:15,202 - 87 - Data exists. Checking update on ./tickFile/cub.json.
+2018-11-24 18:49:15,639 - 58 - 0.json has the same data.
+2018-11-24 18:49:15,989 - 87 - Data exists. Checking update on ./tickFile/dxcm.json.
+2018-11-24 18:49:16,359 - 58 - 1.json has the same data.
+2018-11-24 18:49:16,743 - 87 - Data exists. Checking update on ./tickFile/ilmn.json.
+2018-11-24 18:49:17,110 - 58 - 2.json has the same data.
+2018-11-24 18:49:17,460 - 87 - Data exists. Checking update on ./tickFile/ktos.json.
+2018-11-24 18:49:17,814 - 58 - 3.json has the same data.
+2018-11-24 18:49:18,160 - 87 - Data exists. Checking update on ./tickFile/nuva.json.
+2018-11-24 18:49:18,506 - 58 - 4.json has the same data.
+2018-11-24 18:49:18,850 - 87 - Data exists. Checking update on ./tickFile/qcom.json.
+2018-11-24 18:49:19,209 - 58 - 5.json has the same data.
+2018-11-24 18:49:19,559 - 87 - Data exists. Checking update on ./tickFile/qdel.json.
+2018-11-24 18:49:19,912 - 58 - 6.json has the same data.
+2018-11-24 18:49:20,262 - 87 - Data exists. Checking update on ./tickFile/sre.json.
+2018-11-24 18:49:20,628 - 58 - 7.json has the same data.
+2018-11-24 18:49:21,209 - 53 - Incomplete record, won't be published PhilSensor
