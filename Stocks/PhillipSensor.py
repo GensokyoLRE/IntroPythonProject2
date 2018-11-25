@@ -72,7 +72,6 @@ class PhilSensor(SensorX):
         response = requests.get(self.__url % self.ticks[k])
         self.__j_response = response.json()
         pointer = "./tickFile/" + self.ticks[k] + ".json"
-        # if self.can_request():
         if not os.path.isfile(pointer):
             self.__settings['last_stamp'] = datetime.strftime(datetime.now(), '%B %d, %Y [%H:%M:%S %p]')
             self.__save_settings()
@@ -87,12 +86,6 @@ class PhilSensor(SensorX):
             logging.info("Data exists. Checking update on %s." % pointer)
             self.__save_settings()
             self.has_updates(k)
-        # else:
-        #     updateable = False
-        #     logging.info("Still on the clock. Sleeping for %s seconds cooldown."
-        #                  % int(time.time() - self.__settings['last_request']))
-        #     time.sleep(int(time.time() - self.__settings['last_request']))
-        # return updateable
 
     def get_all(self):
         """
@@ -116,7 +109,7 @@ class PhilSensor(SensorX):
                            "Last Month Stock reports and last news report for %s  "
                            % read_out[str(gtick).upper()]['quote']['companyName'],
                            read_out[str(gtick).upper()]['news'][0]['summary'],
-                           read_out[str(gtick).upper()]['news'][0]['image'],
+                           "https://ak2.picdn.net/shutterstock/videos/19066642/thumb/1.jpg",
                            read_out[str(gtick).upper()]['news'][0]['url']]
             pattern_arr = 0
             while pattern_arr < len(patterns):
