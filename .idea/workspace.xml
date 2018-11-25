@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed575377-1a42-47a6-8411-69ba138c9040" name="Default Changelist" comment="Assisted Completion...">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/PhillipSensor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/PhillipSensor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/Publisher.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Stocks/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/logs/phillipsensor.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/publisher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/publisher/Publisher.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/publisher/publisher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/sensor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/cub.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/dxcm.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/ilmn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/ktos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/nuva.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/qcom.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/qdel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stocks/tickFile/sre.json" beforeDir="false" />
-    </list>
+    <list default="true" id="ed575377-1a42-47a6-8411-69ba138c9040" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +308,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541128659412</updated>
-      <workItem from="1543112129551" duration="9994000" />
+      <workItem from="1543112129551" duration="10108000" />
     </task>
     <task id="LOCAL-00001" summary="Bigger steps!">
       <created>1541739873104</created>
@@ -372,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543116146776</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Assisted Completion...">
+      <created>1543125141407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543125141407</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9994000" />
+    <option name="totallyTimeSpent" value="10108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,9 +376,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10394456" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10394456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -405,7 +391,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -424,7 +410,8 @@
     <MESSAGE value="I'm confused. Very confused." />
     <MESSAGE value="It's breaking." />
     <MESSAGE value="Broke website..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Broke website..." />
+    <MESSAGE value="Assisted Completion..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Assisted Completion..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
