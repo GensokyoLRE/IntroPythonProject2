@@ -106,7 +106,13 @@ class PhilSensor(SensorX):
                            % read_out[str(gtick).upper()]['quote']['companyName'],
                            "Last Month Stock reports and last news report for %s  "
                            % read_out[str(gtick).upper()]['quote']['companyName'],
-                           read_out[str(gtick).upper()]['news'][0]['summary'],
+                           "Latest Low: %.2f\n"
+                           "Latest High: %.2f\n"
+                           "Last Selling Price: %.2f\n"
+                           "Recent Article: %s" % (read_out[str(gtick).upper()]['quote']['low'],
+                                                   read_out[str(gtick).upper()]['quote']['high'],
+                                                   read_out[str(gtick).upper()]['quote']['latestPrice'],
+                                                   read_out[str(gtick).upper()]['news'][0]['summary']),
                            "https://ak2.picdn.net/shutterstock/videos/19066642/thumb/1.jpg",
                            read_out[str(gtick).upper()]['news'][0]['url']]
             pattern_arr = 0
