@@ -1,7 +1,7 @@
 """
 Program: PhilSensor.py
 Author: Phillip "Hifumi" Cuesta (source by Wolfgang Paulus)
-Last Mod: 11/8/18 8:20 PM
+Last Mod: 11/24/18 10:08 PM
 Purpose: Scans stocks pertinent to the local San Diego area.
 Addendum:
 Data provided for free by IEX (https://iextrading.com/developer).
